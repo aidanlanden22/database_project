@@ -25,6 +25,7 @@
           padding: 10px 10px 10px 10px;
           width: 250px;
           display: inline-block;
+          vertical-align: top;
         }
         ul.Dresses li:hover {
           background-color: rgba(146, 195, 209, 0.5);

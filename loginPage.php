@@ -112,7 +112,9 @@ if (mysqli_connect_errno()) {
   return null;
 }
 // Form the SQL query (a SELECT query)
-$sql="SELECT * FROM Seller NATURAL JOIN User WHERE verification='true' ORDER BY Seller.user_id";
+//$sql="SELECT * FROM Seller NATURAL JOIN User WHERE verification='true' ORDER BY Seller.user_id";
+
+echo "logged in!";
 
 ?>
  

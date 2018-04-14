@@ -18,7 +18,7 @@ if (empty($row)) {
 	echo "incorrect login";
 }
 else {
-	redirect('http://localhost:8080/database_project/homepage.php');
+	redirect('http://localhost:8080/database_project/homepage.html');
 }
 
 mysqli_close($con);

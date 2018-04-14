@@ -22,7 +22,7 @@ if (!mysqli_query($con,$sql))
   }
 
   
-redirect('http://localhost:8080/database_project/homepage.php');
+redirect('http://localhost:8080/database_project/homepage.html');
 mysqli_close($con);
 
 function redirect($url) {

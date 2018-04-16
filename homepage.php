@@ -56,7 +56,14 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <header class="w3-container w3-xlarge">
     <p class="w3-left">Clothing</p>
     <p class="w3-right">
-      <a style="text-decoration: none;" href="LogInPage.php" name="LogInbtn"> Log In </a>
+      <?php
+      if (isset($_SESSION["user"])) {
+      echo "Hi, " . $_SESSION["user"];
+    }
+    else {
+    echo '<a style="text-decoration: none;" href="loginPage.php" name="LogInbtn"> Log In </a>';
+  }
+  ?>
       <i class="fa fa-shopping-cart w3-margin-right"></i>
 <!--       <i class="fa fa-search"></i>
  -->    </p>
@@ -139,7 +146,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     </div>
   </div>
 
-
+    <footer>
       <div class="w3-col s4">
         <h4>About</h4>
         <p><a href="BoutiquesSelect.php">Our Boutiques</a></p>
